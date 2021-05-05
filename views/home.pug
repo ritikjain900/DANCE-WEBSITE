@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts 
+  scripts(src='/static/index.js')
+
+block style 
+    style 
+      include ../static/style.css 
+    
+block content 
+    section#introSection
+            div Welcome to Ritik's Dance Academy 
+            div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+            h2 Our Mission
+            div.card 
+                h3 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/1img.jpg", alt="")
+                    div.card-content 
+                        p This is the best dance academy of the universe
+            div.card 
+                h3 Love the way you dance
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/2img.jpg", alt="")
+                    div.card-content 
+                        p This is the best dance academy of the universe
+            div.card 
+                h3 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/3img.jpg", alt="")
+                    div.card-content 
+                        p This is the best dance academy of the universe
+
+    section#sponsorSection
+            h2 OUR SPONSORS
+            div#sponsors 
+                img(src="/static/logo1.jpg", alt="Sponsor Image", class="spImage")
+                img(src="/static/logo2.jpg", alt="Sponsor Image", class="spImage")
+                img(src="/static/logo3.jpg", alt="Sponsor Image", class="spImage")
+                img(src="/static/logo4.jpg", alt="Sponsor Image", class="spImage")
