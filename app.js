@@ -3,7 +3,7 @@ const path=require("path");
 const app=express();
 const bodyparser=require("body-parser");
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://ritikjain900:<password>@cluster0.cwogp.mongodb.net/dancewebsite?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://ritikjain900:anaconda@12345@cluster0.cwogp.mongodb.net/dancewebsite?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 const port=process.env.PORT || 80;
 
 const contactSchema = new mongoose.Schema({
